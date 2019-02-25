@@ -4,7 +4,7 @@ FROM openjdk:8-jre-slim
 WORKDIR /usr/share/tag
 
 # Add the project jar & copy dependencies
-# ADD  target/container-test.jar container-test.jar
+ADD  target/container-test.jar container-test.jar
 ADD  target/libs libs
 
 # Add the suite xmls
